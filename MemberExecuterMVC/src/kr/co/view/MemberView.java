@@ -169,4 +169,10 @@ public class MemberView {
 	public void correctAlphaBet() {
 		System.out.println("올바른 알파벳 입력");
 	}
+	public void failDelete() {
+		System.out.println("회원탈퇴 취소");
+	}
+	public void failEdit() {
+		System.out.println("정보수정 취소");
+	}
 }

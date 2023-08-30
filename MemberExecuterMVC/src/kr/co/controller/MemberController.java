@@ -61,7 +61,7 @@ public class MemberController {
 					if (MemberView.checkedString.equals("회원탈퇴")) {
 						dao.deleteId();	
 					} else {
-						System.out.println("회원탈퇴 취소");
+						view.failDelete();
 					}
 				}
 			} else if (view.choice == 'e' || view.choice == 'E') {
@@ -84,7 +84,7 @@ public class MemberController {
 							view.errorSameId();
 						}
 					} else {
-						System.out.println("정보수정 취소");
+						view.failEdit();
 					}
 				}
 			} else if (view.choice == 'i' || view.choice == 'I') {
